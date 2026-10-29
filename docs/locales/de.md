@@ -6,7 +6,7 @@
 
 # Julian Vance (j-vance)
 
-> Audio-DSP-Systemingenieur & Enthusiast für deterministische Echtzeit-Niedrigstlatenz  
+> Senior Audio-DSP- und Systemingenieur & Enthusiast für deterministische Echtzeit-Niedrigstlatenz  
 > Ansässig in Berlin, Deutschland · Entwicklung von DSP-Pipelines, Audio-Plugins und Embedded-Firmware.
 
 ```text

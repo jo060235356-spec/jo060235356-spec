@@ -40,7 +40,7 @@
 Welcome to my GitLab hub. While my public open-source libraries live on GitHub, I use GitLab primarily for:
 - Deterministic, multi-platform embedded firmware CI/CD pipelines (ARM Cortex-M7, RP2040).
 - Continuous performance benchmarking of DSP hot-loops under strict timing constraints.
-- Hardware-in-the-loop (HIL) automated testing for audio interfaces and custom board revisions.
+- Hardware-in-the-loop (HIL) testing for audio interfaces and custom board revisions.
 
 ---
 
@@ -51,15 +51,15 @@ Welcome to my GitLab hub. While my public open-source libraries live on GitHub, 
 | **Firmware CI/CD** | GitLab CI, Docker, CMake, Ninja | Reproducible cross-compilation for ARM-none-eabi, Clang/LLVM |
 | **Sanitizers & Verification** | Clang ASan, UBSan, MSan | Zero-allocation auditing in audio callbacks, memory leak prevention |
 | **Embedded Hardware** | STM32H7, RP2040, FreeRTOS | Bare-metal DMA audio streams, I2S bus validation |
-| **Hardware-in-the-Loop** | Python, PyVISA, SCPI | Automated audio analyzer control, loopback latency testing |
+| **Hardware-in-the-Loop** | Python, PyVISA, SCPI | Programmatic audio analyzer control, loopback latency testing |
 
 ---
 
 ## 🚀 Active GitLab Pipelines
 
 - `dsp-benchmarks-runner`: Nightly performance regression testing on bare-metal Linux lowlatency kernels.
-- `rp-mpe-firmware-ci`: Automated firmware artifact generation and DMA timing verification for RP2040 boards.
-- `analog-wdf-sim`: Automated Wave Digital Filter solver regression tests across AVX2 and ARM NEON targets.
+- `rp-mpe-firmware-ci`: Reproducible firmware artifact generation and DMA timing verification for RP2040 boards.
+- `analog-wdf-sim`: Continuous Wave Digital Filter solver regression tests across AVX2 and ARM NEON targets.
 
 ---
 

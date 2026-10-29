@@ -1,3 +1,6 @@
 .env
 tokens.json
 *.token.txt
+load_env.js
+*.py
+scratch/

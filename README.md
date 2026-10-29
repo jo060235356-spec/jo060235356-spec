@@ -6,8 +6,8 @@
 
 # Julian Vance (j-vance)
 
-> Audio DSP Systems Engineer & Real-Time Low-Latency Enthusiast  
-> Based in Berlin, Germany · Building deterministic DSP pipelines, audio plugins, and embedded firmware.
+> Senior Systems & Audio DSP Engineer  
+> Based in Berlin, Germany · Deterministic real-time architectures, low-latency signal processing kernels, and embedded systems engineering.
 
 ```text
        ___          _ _            ___  ____  ____  
@@ -20,14 +20,24 @@
 
 ---
 
-## 🧭 About Me
+## 🧭 Engineering Overview
 
-I design, measure, and optimize real-time digital audio systems. My work focuses on low-latency audio processing pipelines where allocations on the audio render thread are strictly forbidden and deterministic timing is non-negotiable.
+I design, measure, and optimize high-throughput, low-latency digital signal processing and systems software. My engineering focus centers on deterministic execution environments where memory allocations on critical audio threads are strictly prohibited, thread synchronization is lock-free, and jitter is eliminated through mechanical sympathy with modern hardware.
 
-- 🎛️ **Primary Focus**: Real-time physical modeling synthesis, analog filter emulations, and SIMD-accelerated DSP kernels.
-- ⚙️ **Hardware Work**: Bare-metal embedded audio on STM32H7 and Raspberry Pi RP2040 microcontrollers.
-- 📐 **Engineering Belief**: Write clean, lock-free, zero-allocation code in the hot loop. Audio glitches (xruns) are hard bugs, not inevitable compromises.
-- ☕ **Off-Screen Life**: Collecting 1970s tape recorders, tuning open-reel tape mechanics, and designing discrete analog preamps.
+- 🎛️ **Primary Domain**: Real-time physical modeling synthesis, analog filter emulations, and SIMD-vectorized DSP pipelines.
+- ⚙️ **Hardware Engineering**: Bare-metal embedded audio on STM32H7 (ARM Cortex-M7) and Raspberry Pi RP2040 microcontrollers.
+- 📐 **Core Disciplines**: Concurrency without mutexes, cache-line-aware data structures, memory-safe systems programming, and high-assurance verification.
+- ☕ **Off-Screen Pursuits**: Restoring 1970s discrete analog preamps, calibrating open-reel tape transport mechanisms, and studying analog filter topologies.
+
+---
+
+## 🏛️ Core Engineering Principles
+
+- **Deterministic Execution**: Zero dynamic memory allocations and strictly bounded execution cycles in real-time hot paths.
+- **Lock-Free Concurrency**: Utilizing Single-Producer Single-Consumer (SPSC) ring buffers, sequentially consistent atomics, and explicit memory fences rather than blocking primitives.
+- **Hardware Sympathy & Vectorization**: Hand-tuned SIMD intrinsics (AVX2, AVX-512, ARM NEON) structured around contiguous cache lines to maximize memory bandwidth and instruction throughput.
+- **Defensive & High-Assurance Design**: Systematic compile-time assertion coverage, runtime sanitization (`ASan`, `UBSan`, `TSan`), and zero-undefined-behavior policies.
+- **Minimal Dependencies & Clean Code**: Readable, standards-compliant C++20 and Rust codebases designed for longevity, clarity, and reproducible builds.
 
 ---
 
@@ -36,11 +46,11 @@ I design, measure, and optimize real-time digital audio systems. My work focuses
 ### Core Systems & Processing
 | Domain | Primary Tools & Languages | Focus Areas & Methodologies |
 | :--- | :--- | :--- |
-| **Real-Time Systems** | C++20/23, Rust, C99 | Lock-free atomics, zero-allocation hot paths, cache line alignment |
-| **DSP & Vectorization** | AVX2 / AVX-512, ARM NEON, FFTW3 | Biquad cascades, WDF (Wave Digital Filters), oversampling filters |
-| **Audio Plugin Frameworks** | JUCE 7/8, CLAP, VST3, WebAudio | Custom GUI rendering, parameter smoothing, polyphonic modulation |
-| **Embedded & Hardware** | STM32 (ARM Cortex-M7), RP2040, KiCAD | I2S/TDM bus interfacing, cirrus logic DACs, board schematic design |
-| **Analysis & Scripting** | Python, NumPy, SciPy, MATLAB | Frequency response modeling, impulse response analysis, SNR sweeps |
+| **Real-Time Systems** | C++20/23, Rust, C99 | Lock-free atomics, zero-allocation hot paths, cache-line alignment |
+| **DSP & Vectorization** | AVX2 / AVX-512, ARM NEON, FFTW3 | Biquad cascades, Wave Digital Filters (WDF), polyphase oversampling |
+| **Audio Plugin Frameworks** | JUCE 7/8, CLAP, VST3, WebAudio | Custom UI rendering, parameter interpolation smoothing, polyphonic modulation |
+| **Embedded & Hardware** | STM32 (ARM Cortex-M7), RP2040, KiCAD | I2S/TDM bus interfacing, Cirrus Logic DAC control, PCB layout design |
+| **Analysis & Modeling** | Python, NumPy, SciPy, MATLAB | Frequency response modeling, impulse response analysis, SNR sweeps |
 | **Build & Toolchains** | CMake, Ninja, Cargo, LLVM/Clang | Strict sanitizers (`ASan`, `UBSan`), deterministic cross-compilation |
 
 ---
@@ -70,7 +80,7 @@ A high-performance terminal CLI tool rendering real-time 60 FPS audio waterfalls
 
 ---
 
-## 📊 Current Engineering Log
+## 📊 Current Engineering Benchmarks
 
 ```text
 [CURRENT WORKSPACE BENCHMARKS - 64 SAMPLES @ 96 kHz]
@@ -99,4 +109,4 @@ I am open to discussions regarding digital signal processing, embedded firmware 
 
 ---
 
-<sub>Crafted with genuine passion for deterministic code, clean mathematics, and pure acoustics.</sub>
+<sub>Dedicated to deterministic code, clean mathematics, and pure acoustics.</sub>

@@ -3,10 +3,10 @@
 ## 1. Account Settings (Settings -> Profile)
 
 - **Full Name**: Julian Vance
-- **Bio**: Audio DSP & low-latency systems engineer. Exploring Differentiable Digital Signal Processing (DDSP), neural audio codecs, and physical modeling datasets. Focused on real-time deterministic inferencing on edge DSPs and embedded targets.
+- **Bio**: Audio DSP & low-latency systems engineer. Researching physical acoustics, continuous-time Wave Digital Filters, and high-performance digital signal processing algorithms.
 - **GitHub Username**: jo060235356-spec
 - **Homepage / Website**: https://github.com/jo060235356-spec
-- **Interests**: `audio-dsp`, `differentiable-dsp`, `neural-audio-codecs`, `embedded-inference`, `acoustics`
+- **Interests**: `audio-dsp`, `signal-processing`, `physical-modeling`, `acoustics`, `real-time-systems`
 
 ---
 

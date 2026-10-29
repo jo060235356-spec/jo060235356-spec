@@ -6,7 +6,7 @@
 
 # Julian Vance (j-vance)
 
-> Engenheiro de Sistemas DSP de Áudio & Entusiasta de Tempo Real de Ultra-Baixa Latência  
+> Engenheiro Senior de Sistemas e DSP de Áudio & Entusiasta de Tempo Real de Ultra-Baixa Latência  
 > Baseado em Berlim, Alemanha · Construindo pipelines determinísticos de DSP, plugins de áudio e firmware embarcado.
 
 ```text
